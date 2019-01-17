@@ -3,10 +3,6 @@ import PropTypes from 'prop-types';
 import './AddTodo.css';
 
 class AddTodo extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
   render() {
     const { onAddTodo, value, onNewTodoChange } = this.props;
     return (
