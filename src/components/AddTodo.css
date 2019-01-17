@@ -1,0 +1,14 @@
+.AddTodo__label {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.AddTodo__input {
+  width: 300px;
+  height: 40px;
+  margin: 10px;
+}

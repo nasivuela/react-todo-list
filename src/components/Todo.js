@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import Button from './Button';
+import './Todo.css';
 
 class Todo extends Component {
   constructor(props) {
@@ -16,9 +19,14 @@ class Todo extends Component {
   render() {
     const { text } = this.props.todo;
     return (
-      <div>
+      <div className="Todo">
         <span>{text}</span>
-        <Button onClick={this.handleRemove} text="borrar" />
+        <Button 
+          className="Todo__remove" 
+          onClick={this.handleRemove}
+        >
+          <FontAwesomeIcon icon={faTrash} />
+        </Button>
       </div>
     );
   }

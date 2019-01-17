@@ -52,7 +52,7 @@ class App extends Component {
     const { todos, inputItem } = this.state;
     console.log(todos);
     return (
-      <div className="App">
+      <div className='App'>
         <TodoList todos={todos} onRemoveTodo={this.handleRemoveTodo} />
         <AddTodo
           value={inputItem}

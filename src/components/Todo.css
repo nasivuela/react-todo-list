@@ -1,0 +1,14 @@
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Todo__remove {
+  border: 0;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: #682D63;
+}
